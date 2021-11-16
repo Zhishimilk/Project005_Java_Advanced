@@ -12,7 +12,7 @@ public class InfoManagerEntry {
             System.out.println("-----欢迎使用信息管理系统-----");
             System.out.println("请输入您的选项:        1. 学生管理        2. 老师管理      3. 退出");
 
-            //接收用户输入
+            //键盘录入选项
             Scanner sc = new Scanner(System.in);
             String choice = sc.nextLine();
 
