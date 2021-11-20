@@ -34,7 +34,7 @@ public class StudentController {
         }
     }
 
-    //
+    //执行添加命令
     private void addStudent() {
         //键盘录入id
         Scanner sc = new Scanner(System.in);
