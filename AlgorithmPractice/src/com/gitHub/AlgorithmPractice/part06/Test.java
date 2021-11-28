@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args) {
+        System.out.println("hello world");
 
         ListNode listNode = new ListNode(0);
         ListNode nextNode;
@@ -15,11 +16,7 @@ public class Test {
 
         //顺序遍历链表
         nextNode = listNode;
-        while(nextNode != null){
-            System.out.print(nextNode.val + " ");
-            nextNode = nextNode.next;
-        }
-        System.out.println();
+        extracted(nextNode);
 
         //递归倒叙遍历链表
         nextNode = listNode;
@@ -28,7 +25,17 @@ public class Test {
 
         //头插法
         nextNode = listNode;
-        System.out.println(printListFromTailToHead(nextNode));
+        extracted(printListNode2(nextNode));
+//        System.out.println(printListFromTailToHead(nextNode));
+
+    }
+
+    private static void extracted(ListNode nextNode) {
+        while(nextNode != null){
+            System.out.print(nextNode.val + " ");
+            nextNode = nextNode.next;
+        }
+        System.out.println();
     }
 
     //递归倒叙遍历链表方法
@@ -41,29 +48,23 @@ public class Test {
         return list;
     }
     //头插法
-    public static void printListNode2(ListNode listNode){
+    public static ListNode printListNode2(ListNode listNode){
 
         if(listNode == null){
-            System.out.println("null");
-            return;
+            return null;
         }
 
         ListNode head, last, next;
         head = listNode;
-        last = head.next;
-
+        last = listNode.next;
         while(last != null){
+            head.next = null;
             next = last;
-            last = next.next;
-
+            last = last.next;
+            next.next=head;
+            head = next;
         }
-
-//        next = head;
-        while( head != null){
-            System.out.print(head.val+" ");
-            head = head.next;
-        }
-        System.out.println();
+        return head;
     }
     //头插法标准答案
     public static ArrayList printListFromTailToHead(ListNode listNode) {

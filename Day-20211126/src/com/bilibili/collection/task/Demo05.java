@@ -1,18 +1,31 @@
 package com.bilibili.collection.task;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 public class Demo05 {
     public static void main(String[] args) {
 
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        System.out.println(list);
+        MyArrays.reverse(list);
+        System.out.println(list);
     }
 }
 
 class MyArrays{
 //        参数ArrayList<Integer> list:要进行操作的集合对象
 //        要求：对list集合对象中的元素进行反转(第一个和最后一个交换，第二个和倒数第二个交换，第三个和倒数第三个交换...)
-    public static void reverse(ArrayList<Integer> list){
-
+    public static void reverse(List<Integer> list){
+        for (int i = 1; i < list.size(); i++) {
+            list.add(0, list.remove(i));
+        }
     }
 
 //        参数ArrayList<Integer> list:要进行操作的集合对象
