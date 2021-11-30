@@ -12,9 +12,13 @@ public class Demo06 {
         }
     }
     public static <T> void swap(T[] t, int i1, int i2){
-        T temp = t[i1];
-        t[i1] = t[i2];
-        t[i2] = temp;
+        try {
+            T temp = t[i1];
+            t[i1] = t[i2];
+            t[i2] = temp;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static <T> void reverse(T[] t){
