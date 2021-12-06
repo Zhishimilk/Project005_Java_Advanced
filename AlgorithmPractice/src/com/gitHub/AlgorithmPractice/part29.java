@@ -3,7 +3,7 @@ package com.gitHub.AlgorithmPractice;
 import java.util.ArrayList;
 
 public class part29 {
-    // TODO 顺时针打印矩阵
+    // 顺时针打印矩阵
     public static void main(String[] args) {
 
         //定义一个二位数组

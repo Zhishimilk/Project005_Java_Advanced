@@ -47,7 +47,7 @@ public class Test {
         }
         return list;
     }
-    //头插法
+    //TODO 头插法
     public static ListNode printListNode2(ListNode listNode){
 
         if(listNode == null){

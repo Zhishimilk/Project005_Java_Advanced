@@ -2,7 +2,7 @@ package com.bilibili.anonymous.demo;
 //	在下面的代码中，请分别使用Lambda的标准格式及省略格式调用 invokeCalc 方法，完成130和120的相减计算：
 public class Test05 {
     public static void main(String[] args) {
-        // TODO 请分别使用Lambda【标准格式】及【省略格式】调用invokeCalc方法来计算130-120的结果?
+        // 请分别使用Lambda【标准格式】及【省略格式】调用invokeCalc方法来计算130-120的结果?
        invokeCalc(10, 20, (a, b) -> a - b);
     }
 
