@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE musics SYSTEM "thisDtd.dtd">-->
+<musics
+    xmlns="http://com.bilibili.xml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://com.bilibili.xml"
+>
+    <music id="1" class="女 翻唱 日语">
+        <name>loser</name>
+        <singer>cocoa</singer>
+    </music>
+
+    <music id="2" class="女 原唱 华语">
+        <name>花月成双</name>
+        <singer>三无</singer>
+    </music>
+</musics>

@@ -1,0 +1,7 @@
+<!ELEMENT musics (music*)>
+<!ELEMENT music (name, singer)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT singer (#PCDATA)>
+<!ATTLIST music
+        id CDATA #REQUIRED
+        class CDATA #REQUIRED>

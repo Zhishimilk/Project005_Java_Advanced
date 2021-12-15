@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<books>
+    <book id="1" class="java">
+        <title>java基础入门</title>     <!-- 书名 -->
+        <author>传智播客</author>       <!-- 作者 -->
+        <year>2015</year>       <!-- 出版年份 -->
+        <price>59.9</price>     <!-- 价格 -->
+    </book>
+
+    <book id="2" class="children">
+        <title>哈利波特</title>     <!-- 书名 -->
+        <author>J K.罗琳</author>       <!-- 作者 -->
+        <year>2005</year>       <!-- 出版年份 -->
+        <price>29.9</price>     <!-- 价格 -->
+    </book>
+
+    <book id="3" class="web">
+        <title>学习xml</title>     <!-- 书名 -->
+        <author>罗伊</author>       <!-- 作者 -->
+        <year>2003</year>       <!-- 出版年份 -->
+        <price>39.9</price>     <!-- 价格 -->
+    </book>
+</books>

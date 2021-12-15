@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://com.bilibili.xmlDemo"
+        elementFormDefault="qualified"
+>
+    <element name="musics">
+        <complexType>
+            <sequence>
+                <element name="music" maxOccurs="3">
+                    <complexType>
+                        <sequence>
+                            <element name="name" type="string" maxOccurs="1"/>
+                            <element name="singer" type="string" maxOccurs="1"/>
+                        </sequence>
+                        <attribute name="id" type="string" use="required"/>
+                        <attribute name="class" type="string" use="optional"/>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

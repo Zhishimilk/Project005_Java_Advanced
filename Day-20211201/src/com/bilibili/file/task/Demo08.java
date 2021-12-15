@@ -80,7 +80,6 @@ public class Demo08 {
             System.out.println("您想删除的歌曲不存在!");
         }
     }
-
     //复制歌曲
     private static void musicCopy(String name) throws IOException {
         File sourceDirs = new File("C:\\Users\\zhish\\Desktop\\temp\\music");
@@ -103,8 +102,7 @@ public class Demo08 {
             File targetFile = new File(sc.nextLine());
 
             //判断输出的目录是否存在, 否则创建
-            if(!targetFile.exists())
-                targetFile.mkdirs();
+            targetFile.mkdirs();
 
             BufferedInputStream bis = new BufferedInputStream(new FileInputStream(new File(sourceDirs, musicFile)));
             BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File(targetFile, musicFile)));
@@ -122,12 +120,13 @@ public class Demo08 {
             System.out.println("您输入的歌曲不存在!");
         }
     }
-
     //展示歌曲目录
     private static void show() {
         File dirs = new File("C:\\Users\\zhish\\Desktop\\temp\\music");
         for (File file : dirs.listFiles()) {
-            System.out.println(file.getName());
+            String name = file.getName();
+            if(name.endsWith(".mp3") || name.endsWith(".aac"))
+            System.out.println(name);
         }
     }
 }
